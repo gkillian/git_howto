@@ -1,0 +1,5 @@
+1.) log into https://github.com/ and create userid & password
+    
+2.) click on start a project and select defaults
+
+3.) 

@@ -1,0 +1,4 @@
+# git config core.editor vi
+git config core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"
+git config user.name   gkillian
+git config user.email  gkillian@gmail.com

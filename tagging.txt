@@ -1,0 +1,37 @@
+# listing tags
+git tag
+
+# search for a specific pattern
+
+git tag -l "v1.8.5*"
+
+# create a tag
+
+git tag -a v1.4 -m "my version 1.4"
+
+# lightweight tag (only creates a checksum
+#
+#    don't supply the -a, -s, or -m option
+
+git tag v1.4-1w
+
+
+# sharing tags: you have to explicityly push
+
+git push origin v1.5
+
+# if you want to push a lot of tags (more than one)
+git push origin --tags
+
+
+#  Checking out Tags
+#
+# You canelly check out a tag in Git, since they can't be moved around. 
+# If you want to put a version of your repository in your working directory
+# that looks like a specific tag, you can create a new branch at a specific 
+# tag with git checkout -b [branchname] [tagname]:
+
+$ git checkout -b version2 v2.0.0
+Switched to a new branch 'version2'
+
+

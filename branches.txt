@@ -18,3 +18,12 @@ switch to a branch: (this moves HEAD to point to thes testing branch
     $ git branch iss53
     $ git checkout iss53
     You
+
+---- merge branch back into master ---
+
+    git checkout master
+    git merge testing
+
+---- delete a branch (no longer different from master) -------
+
+    git branch -d hotfix

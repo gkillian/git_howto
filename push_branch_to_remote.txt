@@ -1,0 +1,18 @@
+#
+# you don't have to be on the branch to push
+#
+git push -u origin <branch>
+git push --set-upstream origin <branch>
+
+#
+# If you are not sharing your repo with others, this is useful to push all
+# your branches to the remote, and --set-upstream tracking correctly for you:
+#
+git push --all -u
+
+
+#
+# pull branches (all)
+#
+
+git pull --all 

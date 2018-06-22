@@ -1,0 +1,10 @@
+#
+# how to merge branches
+#
+git checkout master
+git merge testing
+
+#
+# After merging, you may want to delete old branch
+#
+git branch -d hotfix

@@ -1,0 +1,30 @@
+git config --global pager.diff=false
+
+--no-pager to git will tell it to not use a pager. Passing the option -F to
+less will tell it to not page if the output fits in a single screen.
+
+Usage:
+git --no-pager diff
+
+
+Other options from the comments include:
+# set an evaporating environment variable to use cat for your pager
+GIT_PAGER=cat git diff
+
+# tell less not to paginate if less than a page
+export LESS="-E -F -X $LESS"
+# ...then git as usual
+git diff
+
+=========== cut: LESS OPTIONS =================================
+
+  -d  ........  --dumb
+                  Dumb terminal.
+  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF
+                  Quit at end of file.
+  -F  ........  --quit-if-one-screen
+                  Quit if entire file fits on first screen.
+  -X  ........  --no-init
+                  Don't use termcap init/deinit strings.
+                --no-keypad
+                  Don't use termcap keypad init/deinit strings.

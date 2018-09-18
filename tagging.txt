@@ -1,3 +1,16 @@
+#######################################################################################
+# Branches versus Tags
+#
+# What's the difference between tags and branches? The workspace is (almost always) 
+# associated with a branch, called master by default. When it is, a commit will 
+# automatically update the master reference to point to that new commit; in other words, 
+# branches are mutable references.
+#
+# A tag, on the other hand, is created to point to a specific commit and thereafter does 
+# not change, even if the branch moves on. In other words, tags are immutable references.
+#
+#######################################################################################
+
 # listing tags
 git tag
 

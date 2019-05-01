@@ -1,0 +1,23 @@
+>git show -s --pretty=format:%h
+18c69ba
+
+#
+# get count of updates -- just counts # of log lines
+#
+git log --oneline | wc -l
+
+#
+# use "show" to get more info, like date & author
+#
+>git show -s --pretty=format:%ai
+2019-04-19 13:06:55 -0400
+
+>git show -s --pretty=format:%aI
+2019-04-19T13:06:55-04:00
+
+>git show -s --pretty=format:"%aI %an"
+2019-04-19T13:06:55-04:00 n0195413
+
+
+
+

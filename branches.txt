@@ -1,0 +1,29 @@
+see where the branch pointers are pointing:
+
+    git log --decorate --oneline
+
+create a branch:
+    
+    git branch testing
+
+switch to a branch: (this moves HEAD to point to thes testing branch
+
+    git checkout testing
+
+--- switching to a branch ----
+
+    $ git checkout -b iss53
+    #  Switched to a new branch "iss53"
+    #  This is shorthand for:
+    $ git branch iss53
+    $ git checkout iss53
+    You
+
+---- merge branch back into master ---
+
+    git checkout master
+    git merge testing
+
+---- delete a branch (no longer different from master) -------
+
+    git branch -d hotfix

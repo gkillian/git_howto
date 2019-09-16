@@ -1,0 +1,6 @@
+#Need: A list of changed files on my <branch> comparing to master
+#git branch <your branch> // Switch to branch
+#git pull origin master // Sync master changes inside your branch
+
+git diff --name-only master <branch> // List of the changed files
+

@@ -1,0 +1,21 @@
+************* GIT CREDS BROKEN ON WINDOWS ***********
+
+C:\Temp\git-forge\hs-vpnassistant>git pull
+fatal: Authentication failed for 'https://git.forge.lmig.com/scm/so/hs-vpnassistant.git/'
+
+********** GIT FIXED *********************************
+++ ran these to commands and then it worked ++
+
+    git config --global credential.helper manager
+    git config --global credential.useHttpPath true
+
+C:\Temp\git-forge\hs-vpnassistant>git pull
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 5), reused 0 (delta 0)
+Unpacking objects: 100% (8/8), done.
+From https://git.forge.lmig.com/scm/so/hs-vpnassistant
+   831dc20..42f86c8  Cameron    -> origin/Cameron
+   f6b1b43..ba9f9b0  master     -> origin/master
+Already up to date.

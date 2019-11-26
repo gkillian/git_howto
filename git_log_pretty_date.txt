@@ -1,0 +1,20 @@
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+
+In case you were curious what the different options were:
+%h   = abbreviated commit hash
+%x09 = tab (character for code 9)
+%an  = author name
+%ad  = author date (format respects --date= option)
+%s   = subject
+
+
+>git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+
+6f9bcb8 Glenn Killian   Fri Oct 18 12:35:21 2019 -0400  Merge branch 'master' of https://github.com/gkillian/git_howto
+
+
+>git log --date=short --pretty=format:"%h%x09%an%x09%ad%x09%s"
+
+6f9bcb8 Glenn Killian   2019-10-18      Merge branch 'master' of https://github.com/gkillian/git_howto
+
+

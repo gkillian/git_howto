@@ -1,0 +1,21 @@
+******* NOTE:  only supported with git > 1.8! *****
+
+yum install libgnome-keyring libgnome-keyring-devel
+yum install git-gnome-keyring
+yum install libsecret libsecret-devel
+
+# rpm -ql git-gnome-keyring
+/usr/libexec/git-core/git-credential-gnome-keyring
+
+*******************************************************************************************
+   update Oct 2018  : GNOME has deprecated libgnome-keyring and replaced it with libsecret
+*******************************************************************************************
+#
+# git < 2.11
+#
+# git config --global credential.helper /usr/libexec/git-core/git-credential-gnome-keyring
+
+
+git config --global credential.helper 'cache --timeout=3600'
+git config --global credential.helper libsecret
+

@@ -1,0 +1,4 @@
+You can use the following config command to tell git-diff to ignore the
+difference of eol code.
+
+git config --global core.whitespace cr-at-eol
